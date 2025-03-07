@@ -3,19 +3,16 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+  /* THEME COLORS */
+  --primary: #f3f4e4;
+  --primary-content: #2d3238;
+  --secondary: #113855;
+  --secondary-content: #f3f4e4;
+  --accent: #FFBF47;
+  --base-100: #f3f4e4;
+  --neutral: #113855;
+  --neutral-content: #FFBF47;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* CSS VARIABLES */
+  --navbar-cursor-width: 90px;
 }
