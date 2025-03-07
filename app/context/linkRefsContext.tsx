@@ -1,5 +1,5 @@
 import { usePathname } from "next/navigation";
-import { createContext, Dispatch, ReactNode, SetStateAction, useEffect, useMemo, useState } from "react";
+import { createContext, Dispatch, ReactNode, SetStateAction, useEffect, useState } from "react";
 import usePages from "../hooks/usePages";
 
 interface InnerLineStyle {
@@ -53,7 +53,7 @@ export function LinkRefsProvider({ children }: { children: ReactNode }) {
 
         }
 
-    }, [linkRefs]);
+    }, [linkRefs, linkRefs.length]);
 
     useEffect(() => {
 

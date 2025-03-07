@@ -1,12 +1,8 @@
 'use client';
 import Container from "@/app/components/ui/Container";
 import Dropdown from "@/app/components/ui/Dropdown";
-import HeaderMenuItems from "@/app/components/ui/header/HeaderMenuItems";
-import HeaderMagicLine from "@/app/components/ui/header/HeaderMagicLine";
-import Image from "next/image";
 import Link from "next/link";
 import SidebarMenuItems from "@/app/components/ui/header/SidebarMenuItems";
-import { useState } from "react";
 import { LinkRefsProvider } from "@/app/context/linkRefsContext";
 import NavbarCenter from "./NavbarCenter";
 

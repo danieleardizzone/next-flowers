@@ -1,11 +1,11 @@
-import { useContext, useEffect, useLayoutEffect } from "react";
+import { useContext } from "react";
 import HeaderMagicLine from "./HeaderMagicLine";
 import HeaderMenuItems from "./HeaderMenuItems";
 import { LinkRefsContext } from "@/app/context/linkRefsContext";
 
 export default function NavbarCenter() {
 
-    const { updateInnerLine, activeIndex, linkRefs } = useContext(LinkRefsContext);
+    const { updateInnerLine, activeIndex } = useContext(LinkRefsContext);
 
     return (
         <div className="navbar-center hidden lg:flex relative"

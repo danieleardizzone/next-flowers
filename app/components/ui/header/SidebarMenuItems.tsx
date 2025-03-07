@@ -2,7 +2,6 @@
 import usePages from "@/app/hooks/usePages";
 import Link from "next/link"
 import { usePathname } from "next/navigation";
-import { useRef } from "react";
 
 interface Page {
     name: string,

@@ -1,7 +1,6 @@
 'use client';
 import { LinkRefsContext } from "@/app/context/linkRefsContext";
 import Link from "next/link"
-import { usePathname } from "next/navigation";
 import { useContext, useEffect, useRef } from "react";
 
 

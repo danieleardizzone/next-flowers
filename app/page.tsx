@@ -1,4 +1,3 @@
-import Image from "next/image";
 import HeroSection from "@/app/components/ui/hero/HeroSection";
 
 export default function Home() {
