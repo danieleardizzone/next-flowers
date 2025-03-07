@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  basePath: "/next-flowers",
+  output: "export",
   images: {
     remotePatterns: [
       {
