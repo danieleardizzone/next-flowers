@@ -11,7 +11,7 @@ export default function HeaderMagicLine() {
         <div
             style={{ width: `${linksWidth}px` }}
             className={`magic-line 
-                rounded-lg h-1 bg-slate-700
+                rounded-lg h-1 bg-tertiary
                 absolute bottom-0`}>
             <div className="relative">
                 <div

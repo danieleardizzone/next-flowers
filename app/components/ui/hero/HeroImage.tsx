@@ -1,7 +1,17 @@
 import Image from "next/image";
+import headerImg from "@/public/marineo.jpg"
 
 export default function HeroImage() {
     return (
-        <Image className="rounded-lg w-full" src="https://picsum.photos/1000/600" alt="lorem" width={600} height={300} />
+        <div>
+            <div className="hero-top-gradient"></div>
+            <div className="hero-right-gradient"></div>
+            <div className="hero-bottom-gradient"></div>
+            <div className="hero-left-gradient"></div>
+            <div className="hero-background"></div>
+            <Image src={headerImg} alt="lorem"
+                className="z-[-1]" />
+
+        </div>
     )
 }

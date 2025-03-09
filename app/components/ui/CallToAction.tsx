@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function CallToAction() {
     return (
-        <Link href="/booking" className="btn btn-accent btn-lg rounded-lg w-1/2 mx-auto">
-            Prenota
+        <Link href="/booking" className="btn btn-accent btn-sm sm:btn-md md:btn-md lg:btn-lg rounded-full">
+            Prenota ora!
         </Link>
     )
 }

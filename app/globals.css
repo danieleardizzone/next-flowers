@@ -16,3 +16,40 @@
   /* CSS VARIABLES */
   --navbar-cursor-width: 90px;
 }
+
+.hero-top-gradient,
+.hero-right-gradient,
+.hero-bottom-gradient,
+.hero-left-gradient,
+.hero-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.hero-top-gradient {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0)70%, rgba(38, 52, 64, 1) 100%);
+}
+
+.hero-right-gradient {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0)70%, rgba(38, 52, 64, 1) 100%);
+}
+
+.hero-bottom-gradient {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0)70%, rgba(38, 52, 64, 1) 100%);
+}
+
+.hero-left-gradient {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0)70%, rgba(38, 52, 64, 1) 100%);
+}
+
+.hero-background {
+  background: rgba(38, 52, 64, .5);
+}

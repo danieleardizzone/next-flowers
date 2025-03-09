@@ -7,6 +7,13 @@ export default {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  theme: {
+    extend: {
+      colors: {
+        tertiary: "#263440",
+      }
+    }
+  },
   plugins: [
     daisyui,
   ],
@@ -18,6 +25,7 @@ export default {
           "primary-content": "#2d3238",
           "secondary": "#113855",
           "secondary-content": "#f3f4e4",
+          "tertiary": "#263440",
           "accent": "#FFBF47",
           "base-100": "#f3f4e4",
           "neutral": "#113855",

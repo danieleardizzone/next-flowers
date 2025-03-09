@@ -1,24 +1,45 @@
 'use client';
-import Container from "@/app/components/ui/Container";
-import Dropdown from "@/app/components/ui/Dropdown";
 import Link from "next/link";
-import SidebarMenuItems from "@/app/components/ui/header/SidebarMenuItems";
 import { LinkRefsProvider } from "@/app/context/linkRefsContext";
 import NavbarCenter from "./NavbarCenter";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
+
+import Container from "@/app/components/ui/Container";
+import Dropdown from "@/app/components/ui/Dropdown";
+import SidebarMenuItems from "@/app/components/ui/header/SidebarMenuItems";
+import CallToAction from "@/app/components/ui/CallToAction";
 
 
 export default function Header() {
+
+    const [isHomepage, setIsHomepage] = useState<boolean>(true);
+
+    const pathname = usePathname();
+
+    useEffect(() => {
+        if (pathname === '/') {
+            setIsHomepage(true);
+        } else {
+            setIsHomepage(false);
+        }
+    }, [pathname])
+
     return (
-        <header className="bg-secondary text-secondary-content">
+
+        <header className="text-secondary-content">
             <Container>
-                <div className="navbar">
+                <div className={`navbar 
+                    bg-secondary
+                    px-10 py-0 md:py-1 lg:py-2 mt-2 rounded-full
+                    border-2 border-secondary-content`}>
                     <div className="navbar-start">
 
                         <Dropdown>
                             <SidebarMenuItems />
                         </Dropdown>
 
-                        <Link href="/">
+                        <Link href="/" className="hidden sm:block">
                             FLOWERS
                         </Link>
                     </div>
@@ -26,12 +47,7 @@ export default function Header() {
                         <NavbarCenter />
                     </LinkRefsProvider>
                     <div className="navbar-end">
-                        <Link href="/book-now"
-                            className="navbar-cta
-                            btn text-lg 
-                            text-primary-content">
-                            Prenota ora!
-                        </Link>
+                        <CallToAction />
                     </div>
                 </div>
             </Container>
