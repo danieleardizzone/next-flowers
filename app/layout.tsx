@@ -14,9 +14,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="flowers">
-      <body>
+      <body className="text-xs sm:text-sm md:text-base 
+                      leading-relaxed sm:leading-relaxed md:leading-relaxed xl:leading-loose">
         <Header />
-        {children}
+        <div className="mt-16">
+          {children}
+        </div>
       </body>
     </html>
   );

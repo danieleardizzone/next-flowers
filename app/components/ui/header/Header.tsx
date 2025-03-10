@@ -27,11 +27,12 @@ export default function Header() {
 
     return (
 
-        <header className="text-secondary-content">
+        <header className="text-secondary-content relative">
             <Container>
                 <div className={`navbar 
+                    fixed z-10 top-0 left-1/2 transform -translate-x-1/2 -translate-y-1
                     bg-secondary
-                    px-10 mt-2 
+                    px-10 mt-3 
                     min-h-0 h-14 sm:h-16 lg:h-20
                     rounded-full border-2 border-secondary-content shadow-md`}>
                     <div className="navbar-start">

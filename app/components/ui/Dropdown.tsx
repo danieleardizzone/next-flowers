@@ -59,7 +59,7 @@ export default function Dropdown({ children }: { children: React.ReactNode }) {
                     className={`menu menu-lg 
                     rounded-box z-[1] mt-3 w-42 p-2 shadow bg-secondary 
                     border-2 border-secondary-content
-                    absolute top-[60px] md:top-[70px]
+                    absolute top-12 sm:top-14
                     transition-opacity ease-in duration-100
                     ${isVisible ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}`}
                     ref={dropdownMenuRef}>
