@@ -31,8 +31,9 @@ export default function Header() {
             <Container>
                 <div className={`navbar 
                     bg-secondary
-                    px-10 py-0 md:py-1 lg:py-2 mt-2 rounded-full
-                    border-2 border-secondary-content`}>
+                    px-10 mt-2 
+                    min-h-0 h-14 sm:h-16 lg:h-20
+                    rounded-full border-2 border-secondary-content shadow-md`}>
                     <div className="navbar-start">
 
                         <Dropdown>
