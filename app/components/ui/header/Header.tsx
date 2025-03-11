@@ -2,8 +2,8 @@
 import Link from "next/link";
 import { LinkRefsProvider } from "@/app/context/linkRefsContext";
 import NavbarCenter from "./NavbarCenter";
-import { usePathname } from "next/navigation";
-import { useEffect, useState } from "react";
+// import { usePathname } from "next/navigation";
+// import { useEffect, useState } from "react";
 
 import Container from "@/app/components/ui/Container";
 import Dropdown from "@/app/components/ui/Dropdown";
