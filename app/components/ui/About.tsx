@@ -1,8 +1,8 @@
 import Container from "@/app/components/ui/Container";
 import LeftText from "@/app/components/ui/text&image/LeftText"
 import Image from "next/image";
-import cucina4 from "@/public/cucina4.jpg"
 import TabDivider from "./TabDivider";
+import Carousel from "./Carousel";
 
 export default function About() {
 
@@ -18,7 +18,7 @@ export default function About() {
                     Casa Vacanze a Marineo
                 </TabDivider>
                 <LeftText text={aboutDescription}>
-                    <Image src={cucina4} alt="kitchen" className="rounded-3xl" />
+                    <Carousel />
                 </LeftText>
             </Container>
         </div>

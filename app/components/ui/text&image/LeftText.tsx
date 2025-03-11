@@ -16,7 +16,8 @@ export default function LeftText(props: LeftTextProptypes) {
             </p>
 
             <div className="col-span-12 lg:col-span-6 xl:col-span-7 order-1 lg:order-2
-                            p-1 md:p-2" >
+                            p-1 md:p-2
+                            select-none" >
                 {/* immagine o carosello */}
                 {props.children}
             </div>

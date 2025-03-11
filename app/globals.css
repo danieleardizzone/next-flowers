@@ -53,3 +53,47 @@
 .hero-background {
   background: rgba(38, 52, 64, .5);
 }
+
+
+
+
+.swiper {
+
+  .swiper-button-prev {
+    background-image: url(@/public/assets/chevron-left.svg) !important;
+    background-repeat: no-repeat;
+    background-size: 300% auto;
+    background-position: center;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .swiper-button-next {
+    background-image: url(@/public/assets/chevron-right.svg) !important;
+    background-repeat: no-repeat;
+    background-size: 300% auto;
+    background-position: center;
+
+    &::after {
+      display: none;
+    }
+  }
+
+
+  .swiper-pagination {
+    .swiper-pagination-bullet-active {
+      background-color: #FFBF47;
+    }
+  }
+}
+
+/* md */
+@media (width < 48rem) {
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    visibility: hidden;
+  }
+}
