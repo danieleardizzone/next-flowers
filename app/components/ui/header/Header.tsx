@@ -13,17 +13,17 @@ import CallToAction from "@/app/components/ui/CallToAction";
 
 export default function Header() {
 
-    const [isHomepage, setIsHomepage] = useState<boolean>(true);
+    // const [isHomepage, setIsHomepage] = useState<boolean>(true);
 
-    const pathname = usePathname();
+    // const pathname = usePathname();
 
-    useEffect(() => {
-        if (pathname === '/') {
-            setIsHomepage(true);
-        } else {
-            setIsHomepage(false);
-        }
-    }, [pathname])
+    // useEffect(() => {
+    //     if (pathname === '/') {
+    //         setIsHomepage(true);
+    //     } else {
+    //         setIsHomepage(false);
+    //     }
+    // }, [pathname])
 
     return (
 

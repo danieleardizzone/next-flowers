@@ -65,7 +65,7 @@ export function LinkRefsProvider({ children }: { children: ReactNode }) {
 
             setLinksWidth(linkRectsLastChild.width + linkRectsLastChild.x - linkRectsFirstChild.x)
         }
-    }, [linkRects]);
+    }, [linkRects, linkRefs.length]);
 
     function updateInnerLine(index: number) {
         if (linkRects[index] && linkRects.length > 0) {

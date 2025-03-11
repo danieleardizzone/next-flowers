@@ -3,7 +3,6 @@
 import Container from "@/app/components/ui/Container";
 import HeroText from "@/app/components/ui/hero/HeroText";
 import HeroImage from "@/app/components/ui/hero/HeroImage";
-import Image from "next/image";
 
 export default function HeroSection() {
 

@@ -1,6 +1,5 @@
 import Container from "@/app/components/ui/Container";
-import LeftText from "@/app/components/ui/text&image/LeftText"
-import Image from "next/image";
+import LeftText from "@/app/components/ui/text&image/LeftText";
 import TabDivider from "./TabDivider";
 import Carousel from "./Carousel";
 
