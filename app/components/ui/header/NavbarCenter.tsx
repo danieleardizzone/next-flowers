@@ -1,4 +1,4 @@
-import { useContext, useEffect } from "react";
+import { useContext } from "react";
 import HeaderMagicLine from "./HeaderMagicLine";
 import HeaderMenuItems from "./HeaderMenuItems";
 import { LinkRefsContext } from "@/app/context/linkRefsContext";
