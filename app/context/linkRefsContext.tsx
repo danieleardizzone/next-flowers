@@ -58,14 +58,13 @@ export function LinkRefsProvider({ children }: { children: ReactNode }) {
     useEffect(() => {
 
         if (linkRefs.length > 0) {
-            console.log(linkRects[0].x)
 
             const linkRectsFirstChild = linkRects[0];
             const linkRectsLastChild = linkRects[linkRects.length - 1];
 
             setLinksWidth(linkRectsLastChild.width + linkRectsLastChild.x - linkRectsFirstChild.x)
         }
-    }, [linkRects, linkRefs.length]);
+    }, [linkRects.length]);
 
     function updateInnerLine(index: number) {
         if (linkRects[index] && linkRects.length > 0) {
