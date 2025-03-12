@@ -1,7 +1,8 @@
 import Container from "@/app/components/ui/Container";
 import LeftText from "@/app/components/ui/text&image/LeftText";
-import TabDivider from "./TabDivider";
-import Carousel from "./Carousel";
+import TabDivider from "../TabDivider";
+import Carousel from "../Carousel";
+import CardBoard from "./CardBoard";
 
 export default function About() {
 
@@ -21,6 +22,7 @@ export default function About() {
                 <LeftText text={aboutDescription}>
                     <Carousel />
                 </LeftText>
+                <CardBoard />
             </Container>
         </div>
     );
