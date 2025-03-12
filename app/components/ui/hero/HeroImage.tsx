@@ -10,7 +10,7 @@ export default function HeroImage() {
             <div className="hero-left-gradient"></div>
             <div className="hero-background"></div>
             <Image src={headerImg} alt="lorem"
-                className="z-[-1]" />
+                className="z-[-1] h-full object-cover" />
 
         </div>
     )
