@@ -14,7 +14,7 @@ export default function About() {
                         relative">
             <Container>
                 <TabDivider>
-                    <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl text-accent font-bold text-nowrap">
+                    <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl text-accent font-extrabold text-nowrap">
                         Casa Vacanze a Marineo
                     </h1>
                 </TabDivider>

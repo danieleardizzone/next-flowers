@@ -7,7 +7,7 @@ export default function HeroText() {
         <div className="h-full flex flex-col justify-around
                         px-4 sm:px-0
                         text-secondary-content">
-            <h2 className="text-center text-nowrap text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold">
+            <h2 className="text-center md:text-nowrap text-4xl  md:text-4xl lg:text-5xl font-extrabold text-accent">
                 Flowers Apartments
             </h2>
             <p className="text-center lg:text-lg font-bold">
