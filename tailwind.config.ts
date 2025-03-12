@@ -11,6 +11,7 @@ export default {
     extend: {
       colors: {
         tertiary: "#263440",
+        accentLighter: "#FBD483",
       }
     }
   },
@@ -27,6 +28,7 @@ export default {
           "secondary-content": "#f3f4e4",
           "tertiary": "#263440",
           "accent": "#FFBF47",
+          "accentLighter": "#FBD483",
           "base-100": "#263440",
           "neutral": "#113855",
           "neutral-content": "#FFBF47",
