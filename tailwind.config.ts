@@ -10,6 +10,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        secondaryLighter: "#274A63",
         tertiary: "#263440",
         accentLighter: "#FBD483",
       }
@@ -25,6 +26,7 @@ export default {
           "primary": "#f3f4e4",
           "primary-content": "#2d3238",
           "secondary": "#113855",
+          "secondaryLighter": "#274A63",
           "secondary-content": "#f3f4e4",
           "tertiary": "#263440",
           "accent": "#FFBF47",

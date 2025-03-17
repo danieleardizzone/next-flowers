@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="flowers">
-      <body className="text-sm sm:text-base lg:text-lg
+      <body className="text-base lg:text-lg
                       leading-relaxed sm:leading-relaxed md:leading-relaxed xl:leading-loose">
         <Header />
         <div className="mt-16">
