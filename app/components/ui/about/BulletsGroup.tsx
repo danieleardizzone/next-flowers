@@ -3,10 +3,11 @@
 import Bullet from "./Bullet"
 
 import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode } from "swiper/modules";
+import { FreeMode, Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/free-mode";
+import "swiper/css/autoplay";
 
 import { faWifi, faWind, faPaw, faBasketShopping, faBanSmoking, faKey } from "@fortawesome/free-solid-svg-icons";
 
@@ -41,11 +42,15 @@ export default function BulletsGroup() {
 
     return (
 
-        <div>
+        <div className="py-2 lg:py-3">
             <Swiper
                 freeMode={true}
                 loop={true}
                 speed={800}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
                 slidesPerView="auto"
                 spaceBetween={18}
                 breakpoints={{
@@ -56,7 +61,7 @@ export default function BulletsGroup() {
                         spaceBetween: 42,
                     }
                 }}
-                modules={[FreeMode]}
+                modules={[FreeMode, Autoplay]}
                 className="bullets-group p-2"
             >
 
