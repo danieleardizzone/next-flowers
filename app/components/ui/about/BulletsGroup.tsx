@@ -46,8 +46,16 @@ export default function BulletsGroup() {
                 freeMode={true}
                 loop={true}
                 speed={800}
-                spaceBetween={50}
                 slidesPerView="auto"
+                spaceBetween={18}
+                breakpoints={{
+                    768: {
+                        spaceBetween: 36,
+                    },
+                    1024: {
+                        spaceBetween: 42,
+                    }
+                }}
                 modules={[FreeMode]}
                 className="bullets-group p-2"
             >
