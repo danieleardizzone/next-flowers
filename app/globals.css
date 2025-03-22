@@ -97,3 +97,11 @@
     visibility: hidden;
   }
 }
+
+
+
+.bullets-group {
+  .swiper-slide {
+    width: auto !important;
+  }
+}
