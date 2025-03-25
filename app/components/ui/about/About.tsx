@@ -4,6 +4,7 @@ import TabDivider from "../TabDivider";
 import Carousel from "../Carousel";
 import CardsGroup from "./CardsGroup";
 import BulletsGroup from "./BulletsGroup";
+import SectionTitle from "../SectionTitle";
 
 export default function About() {
 
@@ -16,9 +17,11 @@ export default function About() {
                         relative">
             <Container>
                 <TabDivider>
-                    <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl text-accent font-extrabold text-nowrap">
-                        Casa Vacanze a Marineo
-                    </h1>
+                    <SectionTitle>
+                        <h1 className="text-nowrap">
+                            Casa Vacanze a Marineo
+                        </h1>
+                    </SectionTitle>
                 </TabDivider>
                 <LeftText text={aboutDescription}>
                     <Carousel />
