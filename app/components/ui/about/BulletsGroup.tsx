@@ -4,6 +4,7 @@ import Bullet from "./Bullet"
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FreeMode, Autoplay } from "swiper/modules";
+// import { Autoplay } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/free-mode";
@@ -42,14 +43,53 @@ export default function BulletsGroup() {
 
     return (
 
-        <div className="py-2 lg:py-3">
-            <Swiper
-                freeMode={true}
+        // <div className="py-2 lg:py-3">
+        //     <Swiper
+        //         onSwiper={(swiper) => {
+        //             setTimeout(() => {
+        //                 swiper.autoplay.start();
+        //             }, 1);
+        //         }}
+        //         freeMode={true}
+        //         loop={true}
+        //         speed={5000}
+        //         autoplay={{
+        //             delay: 0,
+        //             disableOnInteraction: false,
+        //             pauseOnMouseEnter: false,
+        //             waitForTransition: false,
+        //         }}
+        //         slidesPerView="auto"
+        //         spaceBetween={18}
+        //         breakpoints={{
+        //             768: {
+        //                 spaceBetween: 36,
+        //             },
+        //             1024: {
+        //                 spaceBetween: 42,
+        //             }
+        //         }}
+        //         modules={[FreeMode, Autoplay]}
+        //         className="bullets-group p-2"
+        //     >
+
+        //         {
+        //             bullets.map((bullet, index) => (
+        //                 <SwiperSlide key={index}>
+        //                     <Bullet icon={bullet.icon} content={bullet.content} />
+        //                 </SwiperSlide>
+        //             ))
+        //         }
+
+        //     </Swiper>
+        // </div>
+
+        <div className="bullets-group relative py-2 lg:py-3">
+            {/* <Swiper
                 loop={true}
                 speed={800}
                 autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
+                    delay: 0,
                 }}
                 slidesPerView="auto"
                 spaceBetween={18}
@@ -61,7 +101,7 @@ export default function BulletsGroup() {
                         spaceBetween: 42,
                     }
                 }}
-                modules={[FreeMode, Autoplay]}
+                modules={[Autoplay]}
                 className="bullets-group p-2"
             >
 
@@ -73,7 +113,61 @@ export default function BulletsGroup() {
                     ))
                 }
 
+            </Swiper> */}
+            <Swiper
+                slidesPerView="auto"
+                spaceBetween={18}
+                speed={5000}
+
+                loop={true}
+                freeMode={true}
+                allowTouchMove={false}
+                autoplay={{
+                    delay: 1,
+                    disableOnInteraction: false,
+                }}
+                breakpoints={{
+                    768: {
+                        spaceBetween: 36,
+                    },
+                    1024: {
+                        spaceBetween: 42,
+                    }
+                }}
+                modules={[Autoplay, FreeMode]}
+
+                // onMouseEnter={() => {
+                //     Swiper.autoplay.stop();
+                // }}
+                // onMouseLeave={() => {
+                //     Swiper.autoplay.start();
+                // }}
+
+                className="p-2"
+            >
+                {
+                    bullets.map((bullet, index) => (
+                        <SwiperSlide key={index}>
+                            <Bullet icon={bullet.icon} content={bullet.content} />
+                        </SwiperSlide>
+                    ))
+                }
+
             </Swiper>
-        </div>
+
+
+            <div className="absolute top-0 left-[-2%] 
+                            w-8 h-full z-10
+                            blur-sm bg-primary"></div>
+            <div className="absolute top-0 left-0 
+                            w-8 h-full z-10
+                            blur-md bg-primary"></div>
+            <div className="absolute top-0 right-[-2%]
+                            w-8 h-full z-10
+                            blur-sm bg-primary"></div>
+            <div className="absolute top-0 right-0 
+                            w-8 h-full z-10
+                            blur-md bg-primary"></div>
+        </div >
     )
 }
