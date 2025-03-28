@@ -1,6 +1,6 @@
 'use client';
 
-import CallToAction from "@/app/components/ui/CallToAction";
+import CTA from "@/app/components/ui/CTA/CTA";
 
 export default function HeroText() {
     return (
@@ -15,7 +15,7 @@ export default function HeroText() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident praesentium ut laudantium nisi iste nemo maxime repellat aliquid, nam quidem.
             </p>
             <div className="mx-auto">
-                <CallToAction />
+                <CTA />
             </div>
         </div>
     );

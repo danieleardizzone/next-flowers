@@ -7,7 +7,7 @@ import NavbarCenter from "./NavbarCenter";
 
 import Dropdown from "@/app/components/ui/Dropdown";
 import SidebarMenuItems from "@/app/components/ui/header/SidebarMenuItems";
-import CallToAction from "@/app/components/ui/CallToAction";
+import CallToAction from "@/app/components/ui/CTA/PrimaryCTA";
 
 
 export default function Header() {
