@@ -11,6 +11,7 @@ import "swiper/css/free-mode";
 import "swiper/css/autoplay";
 
 import { faWifi, faWind, faPaw, faBasketShopping, faBanSmoking, faKey } from "@fortawesome/free-solid-svg-icons";
+import Marquee from "../marquee/Marquee";
 
 export default function BulletsGroup() {
 
@@ -42,42 +43,25 @@ export default function BulletsGroup() {
     ]
 
     return (
+        <div className="bullets-group relative py-2 lg:py-3 overflow-hidden">
+            <Marquee>
 
-        <div className="bullets-group relative py-2 lg:py-3">
-            <Swiper
-                slidesPerView="auto"
-                spaceBetween={18}
-                speed={5000}
-
-                loop={true}
-                freeMode={true}
-                allowTouchMove={false}
-                autoplay={{
-                    delay: 1,
-                    disableOnInteraction: false,
-                }}
-                breakpoints={{
-                    768: {
-                        spaceBetween: 36,
-                    },
-                    1024: {
-                        spaceBetween: 42,
-                    }
-                }}
-                modules={[Autoplay, FreeMode]}
-
-                className="p-2"
-            >
                 {
                     bullets.map((bullet, index) => (
-                        <SwiperSlide key={index}>
+                        <li key={index} className="mx-1 sm:mx-2 md:mx-3 lg:mx-4">
                             <Bullet icon={bullet.icon} content={bullet.content} />
-                        </SwiperSlide>
+                        </li>
                     ))
                 }
 
-            </Swiper>
-
+                {
+                    bullets.map((bullet, index) => (
+                        <li key={index} className="mx-1 sm:mx-2 md:mx-3 lg:mx-4">
+                            <Bullet icon={bullet.icon} content={bullet.content} />
+                        </li>
+                    ))
+                }
+            </Marquee>
 
             {/* trasparenze laterali */}
             <div className="pointer-events-none absolute inset-y-0 left-0 w-16 sm:w-24 
@@ -86,8 +70,6 @@ export default function BulletsGroup() {
             <div className="pointer-events-none absolute inset-y-0 right-0 w-16 sm:w-24 
                             bg-gradient-to-l from-primary via-primary/70 to-transparent 
                             z-10" />
-
-
-        </div >
+        </div>
     )
 }
