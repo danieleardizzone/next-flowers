@@ -6,7 +6,7 @@ interface CardProptypes {
 export default function Card({ title, content }: CardProptypes) {
 
     return (
-        <div className="card w-full shadow-xl border-4 border-accent
+        <div className="card w-full shadow-md border-4 border-accent
                         from-secondary from-20% via-secondaryLighter to-secondary to-80% bg-gradient-to-tr
                         bg-[length:200%] bg-[position:left_center] hover:bg-[position:right_center]
                         transition-all duration-300 ease-in-out">
