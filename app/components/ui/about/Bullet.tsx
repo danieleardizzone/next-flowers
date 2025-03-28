@@ -10,9 +10,10 @@ interface BulletProptypes {
 
 export default function Bullet({ icon, content }: BulletProptypes) {
     return (
-        <div className="from-secondary from-20% via-secondaryLighter to-secondary to-80% bg-gradient-to-tr
+        <div className="from-secondary from-20% via-secondaryLighter 
+                        to-secondary to-80% bg-gradient-to-tr
                         bg-[length:200%] bg-[position:left_center]
-                        px-4 py-2 lg:px-5 rounded-full w-fit
+                        px-3 py-1  lg:px-5 rounded-full w-fit
                         text-secondary-content text-nowrap">
             <div className="flex gap-4 items-center select-none">
                 <FontAwesomeIcon icon={icon} />
