@@ -2,14 +2,6 @@
 
 import Bullet from "./Bullet"
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { FreeMode, Autoplay } from "swiper/modules";
-// import { Autoplay } from "swiper/modules";
-
-import "swiper/css";
-import "swiper/css/free-mode";
-import "swiper/css/autoplay";
-
 import { faWifi, faWind, faPaw, faBasketShopping, faBanSmoking, faKey } from "@fortawesome/free-solid-svg-icons";
 import Marquee from "../marquee/Marquee";
 
