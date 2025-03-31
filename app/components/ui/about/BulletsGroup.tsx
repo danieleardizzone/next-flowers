@@ -2,7 +2,7 @@
 
 import Bullet from "./Bullet"
 
-import { faWifi, faWind, faPaw, faBasketShopping, faBanSmoking, faKey } from "@fortawesome/free-solid-svg-icons";
+import { faWifi, faWind, faPaw, faBasketShopping, faBanSmoking, faKey, faSoap, faShieldHalved } from "@fortawesome/free-solid-svg-icons";
 import Marquee from "../marquee/Marquee";
 
 export default function BulletsGroup() {
@@ -25,13 +25,21 @@ export default function BulletsGroup() {
             content: "Biancheria inclusa"
         },
         {
+            icon: faSoap,
+            content: "Lavanderia"
+        },
+        {
             icon: faBanSmoking,
             content: "Ambiente non fumatori"
         },
         {
             icon: faKey,
             content: "Check-in autonomo"
-        }
+        },
+        {
+            icon: faShieldHalved,
+            content: "Dispositivi di sicurezza"
+        },
     ]
 
     return (
