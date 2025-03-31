@@ -3,7 +3,7 @@
 import { faBed, faHouse, faMountainSun } from "@fortawesome/free-solid-svg-icons";
 
 
-import Card from "./Card"
+import Card from "@/app/components/ui/Card"
 
 export default function CardsGroup() {
 
