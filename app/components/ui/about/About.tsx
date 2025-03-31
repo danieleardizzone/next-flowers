@@ -18,7 +18,7 @@ export default function About() {
             <Container>
                 <TabDivider>
                     <SectionTitle>
-                        <h1 className="text-nowrap">
+                        <h1 className="text-nowrap text-xl sm:text-3xl md:text-4xl lg:text-5xl">
                             Casa Vacanze a Marineo
                         </h1>
                     </SectionTitle>
