@@ -52,6 +52,7 @@ export default function Marquee({ children }: { children: React.ReactNode }) {
             className={`${styles.marquee} ${paused ? styles.paused : ""}`}
             onTouchStart={pauseMarquee}
             onTouchEnd={resumeMarquee}
+            onTouchCancel={resumeMarquee}
             onMouseEnter={pauseMarquee}
             onMouseLeave={resumeMarquee}
         >
