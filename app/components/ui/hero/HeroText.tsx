@@ -4,7 +4,7 @@ import CTA from "@/app/components/ui/CTA/CTA";
 
 export default function HeroText() {
     return (
-        <div className="w-full sm:w-4/6 md:w-2/3 h-3/4 md:h-1/2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="w-full sm:w-2/3 lg:w-1/2 h-3/4 md:h-1/2 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
             <div className="h-full flex flex-col justify-around
                         px-4 sm:px-0
                         text-secondary-content">
@@ -13,7 +13,7 @@ export default function HeroText() {
                     Flowers Apartments
                 </h2>
                 <p className="text-center lg:text-lg font-bold">
-                    Comfort e accoglienza immersi nella natura dell'autentica Sicilia.
+                    Comfort e accoglienza immersi nella natura dell&apos;autentica Sicilia.
                     Ideale per chi ama il mare e la montagna.
                 </p>
                 <div className="mx-auto">
