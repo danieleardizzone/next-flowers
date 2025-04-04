@@ -35,10 +35,17 @@ export async function GET() {
                 .filter((item) => item.type === 'VEVENT')
                 .map((event) => {
                     const ev = event as VEvent;
+
+                    const evStart = new Date(ev.start);
+                    const evEnd = new Date(ev.end);
+
+                    const evFormattedStart = evStart.toLocaleDateString("it-IT");
+                    const evFormattedEnd = evEnd.toLocaleDateString("it-IT");
+
                     return {
                         title: `App.${apartment} - ${ev.summary || 'Prenotato'}`,
-                        start: ev.start,
-                        end: ev.end,
+                        start: evFormattedStart,
+                        end: evFormattedEnd,
                         resource: apartment,
                     };
                 });
