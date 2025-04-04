@@ -54,8 +54,8 @@ export async function GET() {
             orchidea: eventsOrchidea,
             ortensia: eventsOrtensia,
         });
-    } catch (error: any) {
-        console.error('getCalendars error')
+    } catch (error) {
+        console.error('getCalendars error:', error);
         return NextResponse.json({ error: 'impossible to retrieve calendars' }, { status: 500 });
     }
 
