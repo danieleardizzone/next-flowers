@@ -2,13 +2,6 @@ import { NextResponse } from 'next/server';
 import ical, { VEvent } from 'node-ical';
 
 
-interface ParsedEvent {
-    title: string;
-    start: Date;
-    end: Date;
-    resource: string;
-}
-
 const icalUrlOrchidea = 'https://ical.booking.com/v1/export?t=c1c062db-65b5-4988-b93b-408454cbb572';
 const icalUrlOrtensia = 'https://ical.booking.com/v1/export?t=d698611f-d7fe-434c-b067-516285345370';
 
@@ -61,7 +54,7 @@ export async function GET() {
             orchidea: eventsOrchidea,
             ortensia: eventsOrtensia,
         });
-    } catch (error) {
+    } catch (error: any) {
         console.error('getCalendars error')
         return NextResponse.json({ error: 'impossible to retrieve calendars' }, { status: 500 });
     }
