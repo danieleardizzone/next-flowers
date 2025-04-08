@@ -26,7 +26,8 @@ export default function Header() {
 
     return (
 
-        <header className="text-secondary-content relative">
+        <header className="text-secondary-content relative
+                            mb-16 sm:mb-20 lg:mb-24">
             <div className={`navbar 
                     fixed z-10 top-0 left-1/2 transform -translate-x-1/2 -translate-y-1
                     bg-secondary

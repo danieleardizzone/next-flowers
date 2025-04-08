@@ -17,7 +17,7 @@ export default function RootLayout({
       <body className="text-base lg:text-lg
                       leading-relaxed sm:leading-relaxed md:leading-relaxed xl:leading-loose">
         <Header />
-        <div className="mt-16">
+        <div >
           {children}
         </div>
       </body>
