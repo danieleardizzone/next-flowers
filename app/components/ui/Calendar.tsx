@@ -1,9 +1,17 @@
 'use client';
-import { EventData } from "@/app/booking/page";
 
+export interface Event {
+    title: string,
+    start: string,
+    end: string,
+    resource: string,
+}
 
 interface CalendarProptypes {
-    data: EventData,
+    data: {
+        orchidea: Event[],
+        ortensia: Event[],
+    }
 }
 
 export default function Calendar({ data }: CalendarProptypes) {
