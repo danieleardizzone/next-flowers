@@ -12,22 +12,10 @@ import CallToAction from "@/app/components/ui/CTA/PrimaryCTA";
 
 export default function Header() {
 
-    // const [isHomepage, setIsHomepage] = useState<boolean>(true);
 
-    // const pathname = usePathname();
-
-    // useEffect(() => {
-    //     if (pathname === '/') {
-    //         setIsHomepage(true);
-    //     } else {
-    //         setIsHomepage(false);
-    //     }
-    // }, [pathname])
 
     return (
-
-        <header className="text-secondary-content relative
-                            mb-16 sm:mb-20 lg:mb-24">
+        <header className="text-secondary-content relative">
             <div className={`navbar 
                     fixed z-10 top-0 left-1/2 transform -translate-x-1/2 -translate-y-1
                     bg-secondary

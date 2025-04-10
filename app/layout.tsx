@@ -13,7 +13,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="flowers">
+    <html lang="en" data-theme="flowersHomepage">
       <body className="text-base lg:text-lg
                       leading-relaxed sm:leading-relaxed md:leading-relaxed xl:leading-loose">
         <Header />

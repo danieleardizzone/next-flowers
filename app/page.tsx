@@ -4,7 +4,7 @@ import Activities from "@/app/components/ui/activities/Activities";
 
 export default function Home() {
   return (
-    <div>
+    <div data-theme="flowersHomepage">
       <HeroSection />
       <About />
       <Activities />

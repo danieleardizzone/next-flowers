@@ -1,6 +1,7 @@
-import Calendar from "../components/ui/Calendar";
-import Container from "../components/ui/LgContainer";
+import Calendar from "@/app/components/ui/Calendar";
+import Container from "@/app/components/ui/LgContainer";
 import { getCalendars } from '@/lib/getCalendars'
+import FirstSection from "@/app/components/ui/FirstSection";
 
 export default async function Page() {
 
@@ -8,8 +9,11 @@ export default async function Page() {
 
 
     return (
-        <Container>
-            <Calendar data={data} />
-        </Container>
+        <div data-theme="flowers">
+            <FirstSection />
+            <Container>
+                <Calendar data={data} />
+            </Container>
+        </div>
     );
 }
