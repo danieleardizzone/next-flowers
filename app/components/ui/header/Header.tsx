@@ -19,8 +19,8 @@ export default function Header() {
             <div className={`navbar 
                     fixed z-10 top-0 left-1/2 transform -translate-x-1/2 -translate-y-1
                     bg-secondary
-                    px-10 mt-3 
-                    lg:max-w-[90vw]
+                    px-10 mt-3
+                    max-w-[100%] sm:max-w-[640px] md:max-w-[768px] lg:max-w-[1024px] xl:max-w-[1280px] 2xl:max-w-[1536px]
                     min-h-0 h-14 sm:h-16 xl:h-20
                     rounded-full border-2 border-secondary-content shadow-md`}>
                 <div className="navbar-start">
@@ -41,5 +41,6 @@ export default function Header() {
                 </div>
             </div>
         </header>
+
     )
 }
