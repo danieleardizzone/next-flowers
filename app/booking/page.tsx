@@ -1,5 +1,5 @@
 import Calendar from "@/app/components/ui/Calendar";
-import Container from "@/app/components/ui/LgContainer";
+import Container from "@/app/components/ui/Container";
 import { getCalendars } from '@/lib/getCalendars'
 import FirstSection from "@/app/components/ui/FirstSection";
 

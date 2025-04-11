@@ -1,4 +1,4 @@
-import Container from "../LgContainer";
+import Container from "../Container";
 import SectionTitle from "../SectionTitle";
 
 export default function Activities() {
